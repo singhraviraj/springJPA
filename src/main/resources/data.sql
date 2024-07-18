@@ -1,5 +1,5 @@
-INSERT INTO product.product_table(price,quantity,sku,title)
+INSERT INTO product.product_table(sku,title,price,quantity)
 VALUES
-(12.4,4,"parle1234","parleG"),
-(15.5,10,"pepsi426","pepsi"),
-(20.0,2,"maza123","maza");
+("parle1234","parleG",12.4,4),
+("pepsi426","pepsi",15.5,10),
+("maza123","maza",20.0,2);

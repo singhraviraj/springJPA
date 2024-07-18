@@ -31,7 +31,6 @@ public class Product {
     private Long id;
     private String sku;
 
-    @Column(nullable = false)
     private String title;
     private BigDecimal price;
     private Integer quantity;
