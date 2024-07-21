@@ -1,6 +1,8 @@
 package com.learningSpringJPA.springJPA.repository;
 
 import com.learningSpringJPA.springJPA.entity.Product;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -20,4 +22,6 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
     List<Product> findByOrderByPrice();
 
     List<Product> findBy(Sort sort);
+
+    Page<Product> findAll(Pageable pageable);
 }
